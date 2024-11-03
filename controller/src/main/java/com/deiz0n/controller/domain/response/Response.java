@@ -15,7 +15,7 @@ import java.time.Instant;
 public class Response<T> {
 
     private HttpStatus status;
-    private HttpStatus code;
+    private Integer code;
     private Instant instant;
     private String path;
     private T data;
