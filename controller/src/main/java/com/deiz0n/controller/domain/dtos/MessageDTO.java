@@ -1,4 +1,4 @@
-package com.deiz0n.controller.domain;
+package com.deiz0n.controller.domain.dtos;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -8,7 +8,7 @@ import lombok.Singular;
 
 import java.util.Map;
 
-public record EmailDTO(
+public record MessageDTO(
         @NotBlank(message = "O campo \"email\" não pode estar em branco")
         @Email(message = "O campo \"email\" estar inválido")
         @JsonProperty("email_destinatario")
